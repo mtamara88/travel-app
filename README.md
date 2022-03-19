@@ -4,11 +4,11 @@ This Travel App Project is the final project of the Udacity Front End Web Develo
 ## Table of contents
 * [Overview](#overview)
 * [Preview](#preview)
-* [Sign up for API keys](#different-apis-used)
+* [Different APIs used](#different-apis-used)
 * [Installation Guide](#installation-guide)
 * [Development Strategy](#development-strategy)
 * [Technologies](#technologies)
-* [API Credentials](#attribution)
+* [Attribution](#attribution)
 
 ## Overview
 This is a web app, where the user can enter the location where he/she is travelling to and the date he/she is leaving. If the trip is within a week, you will get the current weather forecast. If the trip is in the future, you will get a predicted forecast. User can also get an image of the chosen location as well as the icon reflecting the weather forecast.
