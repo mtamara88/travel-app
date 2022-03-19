@@ -1,0 +1,59 @@
+    .trip {
+        align-items: center;
+        padding: 1rem;
+        background-color: rgb(167, 205, 230);
+        border-radius: 10px;
+        box-shadow: 5px 6px 15px 5px gray;
+        margin: 1rem;
+        p,
+        li {
+            font-size: 16px;
+            line-height: 1.2em;
+        }
+        &_img {
+            vertical-align: middle;
+            width: 650px;
+            max-width: 90%;
+            border-radius: 10%;
+            margin: 0.5rem;
+        }
+        h2 {
+            font-size: 30px;
+            margin: 15px 0px;
+        }
+        h3 {
+            font-size: 20px;
+            margin: 10px 0px;
+        }
+        figure {
+            text-align: center;
+        }
+        figcaption {
+            font-size: 10px;
+            font-style: italic;
+            text-align: center;
+        }
+        &_details {
+            margin: 2rem 0;
+            display: flex;
+            direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: left;
+        }
+        &_weather {
+            background-color: #D5EAF7;
+            border-radius: 10%;
+            padding: 0.5rem;
+        }
+        &_info {
+            padding: 0.5rem;
+            font-weight: bold;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .trip_details {
+            display: block;
+        }
+    }

@@ -1,0 +1,42 @@
+#app {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 50px;
+    grid-template-areas: "hd" "main" "ft";
+    justify-content: center;
+}
+
+header {
+    grid-area: hd;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+main {
+    grid-area: main;
+    min-height: 0;
+    align-items: center;
+}
+
+footer {
+    grid-area: ft;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+
+@media(min-width: 600px) {
+    #app {
+        min-height: 100vh;
+        grid-template-columns: auto;
+        grid-template-rows: auto 1fr 50px;
+        grid-template-areas: "hd hd hd hd" ".main main." "ft ft ft ft"
+    }
+    main {
+        align-items: center;
+    }
+    #search {
+        margin: 0;
+    }
+}

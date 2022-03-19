@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel App</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="app">
+        <header>
+            <h1>Your Travel Planner</h1>
+            <p><img class="logo" src="../img/logo.png" /> </p>
+        </header>
+        <main>
+            <section id="search">
+                <div class="userForm">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" placeholder="Destination" required />
+                    <label for="startDate">Start date:</label>
+                    <input type="date" id="startDate" name="startDate" placeholder="dd.mm.yyyy" required />
+                    <label for="endDate">End date:</label>
+                    <input type="date" id="endDate" name="endDate" placeholder="dd.mm.yyyy" required />
+                    <button type="submit" id="submit" name="">Submit</button>
+                </div>
+            </section>
+            <section id="result">
+
+            </section>
+        </main>
+
+        <footer>
+            Travel App ©2022 <br>
+            <span class="copyright"><a href="https://www.flaticon.com/de/kostenlose-icons/reise" title="reise Icons">Reise Icons erstellt von monkik - Flaticon</a>
+        </footer>
+    </div>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>
